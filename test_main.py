@@ -1,6 +1,5 @@
 import main
 
-@pytest.fixture
 def client():
     with main.test_client() as client:
         yield client
