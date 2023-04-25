@@ -18,7 +18,7 @@ jobs:
       - name: Connect to VPS via SSH
         uses: webfactory/ssh-agent@v0.5.0
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.deploy_key }}
           ssh-username: CalvinvanEsveld
           ssh-host: 134.122.76.179
     
