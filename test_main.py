@@ -1,4 +1,10 @@
+
 import main
+
+
+def client():
+    with main.test_client() as client:
+        yield client
 
 def test_index(client):
     response = client.get('/')
