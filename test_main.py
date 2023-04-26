@@ -11,3 +11,8 @@ def test_index(client):
     assert response.status_code == 200
     assert b"Hello, world!" in response.data
 
+def test_cow(client):
+    response = client.get("/cow")
+    assert response.status_code == 200
+    assert b"'MOoooOo!'" in response.data
+
