@@ -1,5 +1,5 @@
+---
 name: Run Tests
-
 on: push
 jobs:
   run-tests:
@@ -10,7 +10,7 @@ jobs:
       - name: Setup Python 3.11
         uses: actions/setup-python@v3
         with:
-          python-version: '3.11.0'
+          python-version: 3.11.0
       - name: Install Dependencies
         run: pip install -r requirements.txt
       - name: Run tests
@@ -27,5 +27,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
-        
         
