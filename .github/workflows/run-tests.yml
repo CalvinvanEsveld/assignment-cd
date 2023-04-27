@@ -17,11 +17,11 @@ jobs:
         run: pytest
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: run-tests
     steps:
       - name: Check out code
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.10
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
