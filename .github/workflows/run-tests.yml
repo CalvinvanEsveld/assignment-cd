@@ -36,4 +36,4 @@ jobs:
         script: |
           cd /home/assignment-cd
           git pull
-          sudo systemctl restart assignment-cd.service
+          systemctl restart assignment-cd.service
