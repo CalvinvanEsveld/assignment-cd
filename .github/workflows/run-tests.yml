@@ -28,7 +28,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
       - name: Set execute permission on deploy.sh
-        run: chmod +x deploy.sh
+        run: chmod +x ./deploy.sh
       - name: Deploy
         run: sh ./deploy.sh
 
