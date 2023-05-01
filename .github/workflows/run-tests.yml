@@ -30,6 +30,6 @@ jobs:
       - name: Set execute permission on deploy.sh
         run: chmod +x deploy.sh
       - name: Run deploy script
-        run: sh ./deploy.sh
+        run: sh deploy.sh
 
         
