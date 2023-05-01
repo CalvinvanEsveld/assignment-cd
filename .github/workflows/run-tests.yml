@@ -30,7 +30,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-20.04
-    needs: run-tests
+    needs: deploy
     steps:
       - name: check out code
         uses: actions/checkout@v3
