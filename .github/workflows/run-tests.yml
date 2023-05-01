@@ -29,7 +29,6 @@ jobs:
           port: ${{ secrets.PORT }}
       - name: Run deploy script
         run: |
-          chmod +x deploy.sh
           sh ./deploy.sh
 
         
