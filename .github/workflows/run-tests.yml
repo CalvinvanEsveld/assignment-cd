@@ -35,9 +35,7 @@ jobs:
       - name: check out code
         uses: actions/checkout@v3
       - name: Run script file
-        run: |
-          chmod +x deploy.sh
-          sh deploy.sh
+        run: sh deploy.sh
 
 
         
