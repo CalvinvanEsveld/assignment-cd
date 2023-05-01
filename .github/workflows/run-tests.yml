@@ -33,7 +33,7 @@ jobs:
     needs: deploy
     steps:
       - name: check out code
-        uses: actions/checkout@v3
+        uses: appleboy/ssh-action@v0.1.10
       - name: Run script file
         run: sh deploy.sh
 
