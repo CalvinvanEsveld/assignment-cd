@@ -28,6 +28,6 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
       - name: Run deploy script
-        run: chmod +x "${GITHUB_WORKSPACE}/deploy.sh"
+        run: chmod +x deploy.sh
 
         
