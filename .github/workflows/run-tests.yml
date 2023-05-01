@@ -28,7 +28,9 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
       - name: Run script file
-        run: sh deploy.sh
+        run: |
+          chmod +x deploy.sh
+          sh deploy.sh
 
 
         
