@@ -30,7 +30,7 @@ jobs:
       - name: check out code
         uses: actions/checkout@v3
       - name: Run script file
-        run: sh deploy.s
+        run: sh deploy.sh
 
 
         
