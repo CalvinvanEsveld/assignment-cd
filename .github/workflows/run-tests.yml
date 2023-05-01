@@ -29,8 +29,8 @@ jobs:
           port: ${{ secrets.PORT }}
       - name: Run script file
         run: |
-         chmod +x .github/workflows/deploy.sh
-         .github/workflows/deploy.sh
-        shell: bash
+         chmod +x deploy.sh
+         sh deploy.sh
+
 
         
