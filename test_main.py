@@ -9,7 +9,7 @@ def client():
 def test_index(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Hello, World!" in response.data
+    assert b"Hello, Calvin!" in response.data
 
 def test_cow(client):
     response = client.get("/cow")
