@@ -28,8 +28,8 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
       - name: Set execute permission on deploy.sh
-        run: chmod +x ./deploy.sh
+        run: chmod +x .github/workflows/deploy.sh
       - name: Deploy
-        run: sh ./deploy.sh
+        run: sh .github/workflows/deploy.sh
 
         
