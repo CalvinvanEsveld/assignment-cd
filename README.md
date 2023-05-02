@@ -1,6 +1,6 @@
 ---REPORT---
 
-These are the components of my solution and how they relate to each other.
+These are the components of my solution and how they relate to each other:
 
 GitHub Actions: GitHub Actions is a feature of GitHub that allows you to automate tasks 
 and workflows in response to events such as code pushes, pull requests, and issue comments. 
@@ -29,7 +29,7 @@ Overall, this solution makes use of GitHub Actions' automation features to make 
 to test and deploy code. It uses SSH to run commands remotely and Ubuntu as the target environment.
 
 
-These are the problems I encountered and I how solved them.
+These are the problems I encountered and I how solved them:
 
 Incorrect VPS configuration:
 Problem: If the VPS is not configured correctly, the deployment script might not run, 
